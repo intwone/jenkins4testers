@@ -5,11 +5,13 @@ pipeline {
     }
   }
   stages {
-    stage("Build") {
+    stages("Teste") {
       steps {
-        sh "docker run ruby"
+        sh "docker pull ruby"
       }
+    }
 
+    stage("Build") {
       steps {
         sh "bundle install"
       }
