@@ -5,7 +5,7 @@ pipeline {
     }
   }
   stages {
-    stages("Teste") {
+    stage("Teste") {
       steps {
         sh "docker pull ruby"
       }
