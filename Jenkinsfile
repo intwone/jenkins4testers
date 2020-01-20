@@ -6,6 +6,10 @@ pipeline {
   }
   stages {
     stage("Build") {
+      stpeps {
+        sh "docker run ruby"
+      }
+
       steps {
         sh "bundle install"
       }
