@@ -6,7 +6,7 @@ pipeline {
   }
   stages {
     stage("Build") {
-      stpeps {
+      steps {
         sh "docker run ruby"
       }
 
