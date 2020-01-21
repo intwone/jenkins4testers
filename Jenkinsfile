@@ -1,8 +1,8 @@
 pipeline {
   agent {
-    docker {
-      image "ruby"
-    }
+      docker {
+          image "ruby"
+      }
   }
   stages {
     stage("Build") {
@@ -13,7 +13,7 @@ pipeline {
 
     stage("Tests") {
       steps {
-        sh "bundle exec cucumber -p ci"
+        sh "echo 'simulando um teste automatizado'"
       }
     }
   }
